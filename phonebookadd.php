@@ -67,6 +67,7 @@ if($rows){
     while ($row = mysqli_fetch_array ($result)){
         echo 'ID: ' . $row['id'] . '<br>';
         echo 'name: ' .$row['name'] . '<br>';
+        echo '<a href="/teb2/phonebookrecord.php?id=' . $row['id'] .'">' . $row['id'] . '</a><br/>';
     }
 }
 mysqli_close($dbh);
