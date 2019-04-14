@@ -10,8 +10,6 @@ if(isset($_POST['SubmitForm'])){
     $mobile=$_POST['mobile'];
     $id=$_POST['id'];
     
-        
-    
     $dbh = connectDatabase(); 
         
     if (!$dbh) {
